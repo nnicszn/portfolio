@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danica Rodriguez | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="selection:bg-purple-500 selection:text-white overflow-x-hidden relative">
+
+    <!-- glow kineme -->
+    <div class="fixed top-[-10%] left-[-10%] w-[400px] h-[400px] bg-purple-600/20 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-fuchsia-600/20 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+
+    <!-- nav bar -->
+    <header class="sticky top-0 left-0 w-full z-40 backdrop-blur-xl bg-[#080311]/80 border-b border-purple-500/10">
+        <div class="container-custom h-20 flex items-center justify-between">
+            <a href="#hero" class="group flex items-center space-x-2 text-xl font-black tracking-wider">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-600 to-fuchsia-500 flex items-center justify-center text-white text-sm shadow-lg shadow-purple-500/30">D</span>
+                <span class="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent">Rodriguez</span>
+            </a>
+
+            <!-- desktop nav -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-purple-200/80">
+                <a href="#hero" class="hover:text-purple-300 transition-colors">Home</a>
+                <a href="#about" class="hover:text-purple-300 transition-colors">About</a>
+                <a href="#skills" class="hover:text-purple-300 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-purple-300 transition-colors">Projects</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="resume.pdf" target="_blank" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-medium text-sm shadow-lg flex items-center space-x-2">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+
+            <!-- mobile menu -->
+            <button id="menu-btn" class="md:hidden text-purple-300 hover:text-white focus:outline-none text-2xl p-2">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- burger -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-[#100722]/95 backdrop-blur-2xl border-b border-purple-500/20 px-6 py-6 flex flex-col space-y-4 shadow-2xl">
+            <a href="#hero" class="mobile-link text-purple-200 hover:text-purple-400 font-medium text-lg">Home</a>
+            <a href="#about" class="mobile-link text-purple-200 hover:text-purple-400 font-medium text-lg">About</a>
+            <a href="#skills" class="mobile-link text-purple-200 hover:text-purple-400 font-medium text-lg">Skills</a>
+            <a href="#projects" class="mobile-link text-purple-200 hover:text-purple-400 font-medium text-lg">Projects</a>
+            <a href="resume.pdf" target="_blank" class="mobile-link px-5 py-3 rounded-xl bg-purple-600 text-white text-center font-medium flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>View Resume</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- hero section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center relative section-padding">
+            <div class="container-custom text-center z-10">
+                <div class="inline-flex items-center space-x-3 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs sm:text-sm font-medium mb-8 backdrop-blur-md">
+                    <span class="relative flex h-2.5 w-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-fuchsia-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-fuchsia-500"></span>
+                    </span>
+                    <span>Computer Engineering Technology Student</span>
+                </div>
+                
+                <h1 class="hero-title font-black tracking-tight mb-6">
+                    I DON'T KNOW BALL <br>
+                    <span class="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">WHAT THE HELLY</span>
+                </h1>
+                
+                <p class="text-sm sm:text-base md:text-lg text-purple-200/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Hi, I'm <strong class="text-purple-200">Danica Rodriguez</strong>. A passionate <strong class="text-purple-200">Computer Engineering Technology</strong> student with a love for <strong class="text-purple-200">hardware logic</strong> and <strong class="text-purple-200">web software</strong>. I enjoy creating interactive web applications, exploring UI/UX design, and solving problems through code.
+                
+                <div class="flex items-center justify-center">
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-semibold shadow-xl hover:scale-105 transition-all flex items-center justify-center space-x-3 text-sm">
+                        <span>Explore My Work</span>
+                        <i class="fa-solid fa-arrow-right-long text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-center space-x-5 mt-12">
+                    <a href="https://github.com/nnicszn" target="_blank" title="GitHub Profile" class="w-12 h-12 rounded-2xl bg-[#130a27] border border-purple-500/20 flex items-center justify-center text-purple-300 hover:text-white transition-all">
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <a href="mailto:danicarodriguez1557@gmail.com" title="Send Email" class="w-12 h-12 rounded-2xl bg-[#130a27] border border-purple-500/20 flex items-center justify-center text-purple-300 hover:text-white transition-all">
+                        <i class="fa-regular fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="section-padding relative">
+            <div class="container-custom">
+                <div class="text-center mb-12">
+                    <span class="text-xs font-bold tracking-widest text-fuchsia-400 uppercase bg-fuchsia-500/10 px-4 py-1.5 rounded-full border border-fuchsia-500/20">Get To Know Me</span>
+                    <h2 class="section-title font-extrabold mt-3 mb-4">About Me</h2>
+                    <div class="w-16 h-1 bg-gradient-to-r from-purple-500 to-fuchsia-500 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="about-grid">
+                   <!-- mukha ko, me na this  -->
+                    <div class="relative group mx-auto w-full max-w-3xl my-4 cursor-pointer">
+                        <div class="absolute -inset-2 sm:-inset-3 bg-gradient-to-r from-purple-600 via-fuchsia-500 to-pink-500 rounded-[2rem] blur-xl opacity-40 group-hover:opacity-100 transition duration-500"></div>
+                        
+                        <!-- container ng mukha ko, chopchoppin kaya?? -->
+                        <div class="relative rounded-3xl overflow-hidden bg-[#130a27] border border-purple-400/40 p-2 sm:p-3 shadow-2xl">
+                            <img src="meeee.jpg" alt="Danica Rodriguez" class="profile-img-hover rounded-2xl w-full h-[280px] sm:h-[380px] md:h-[420px] object-cover">
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <!-- text sa baba ng pic-->
+                    <div class="space-y-6 text-center md:text-left max-w-3xl mx-auto">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-purple-100 leading-snug">
+                            Passionate about combining <span class="bg-gradient-to-r from-purple-400 to-fuchsia-400 bg-clip-text text-transparent">hardware logic</span> & <span class="bg-gradient-to-r from-fuchsia-400 to-pink-400 bg-clip-text text-transparent">web software</span>.
+                        </h3>
+                        <p class="text-purple-200/75 leading-relaxed text-sm sm:text-base">
+                            As a student pursuing a <strong>Diploma in Computer Engineering Technology</strong> equipped with <strong>TESDA technical training</strong>, I am constantly exploring how hardware and software work together seamlessly.
+                        </p>
+                        <p class="text-purple-200/75 leading-relaxed text-sm sm:text-base">
+                            Whether it's building interactive user interfaces, writing logic in Java, or designing functional layouts, I enjoy every part of problem-solving and digital creation.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 rounded-2xl bg-[#130a27]/80 border border-purple-500/20 text-left">
+                                <i class="fa-solid fa-microchip text-xl text-purple-400 mb-2"></i>
+                                <h4 class="text-sm font-bold text-purple-100">Comp. Eng. Tech.</h4>
+                                <p class="text-xs text-purple-300/60 mt-0.5">Diploma Program</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-[#130a27]/80 border border-purple-500/20 text-left">
+                                <i class="fa-solid fa-certificate text-xl text-fuchsia-400 mb-2"></i>
+                                <h4 class="text-sm font-bold text-purple-100">TESDA Qualified</h4>
+                                <p class="text-xs text-purple-300/60 mt-0.5">Certified Technical Skills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section id="skills" class="section-padding bg-[#0c051a]/60 relative">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <span class="text-xs font-bold tracking-widest text-purple-400 uppercase bg-purple-500/10 px-4 py-1.5 rounded-full border border-purple-500/20">Tech Stack</span>
+                    <h2 class="section-title font-extrabold mt-3 mb-4">What I'm Learning & Using</h2>
+                    <div class="w-16 h-1 bg-gradient-to-r from-purple-500 to-fuchsia-500 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="group p-5 rounded-3xl bg-[#130a27]/90 border border-purple-500/20 flex flex-col items-center text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3 class="font-bold text-sm text-purple-100 mb-1">HTML & CSS</h3>
+                        <p class="text-[11px] text-purple-300/60">Layouts & Design</p>
+                    </div>
+
+                    <div class="group p-5 rounded-3xl bg-[#130a27]/90 border border-purple-500/20 flex flex-col items-center text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3 class="font-bold text-sm text-purple-100 mb-1">JavaScript</h3>
+                        <p class="text-[11px] text-purple-300/60">Interactivity & Logic</p>
+                    </div>
+
+                    <div class="group p-5 rounded-3xl bg-[#130a27]/90 border border-purple-500/20 flex flex-col items-center text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <h3 class="font-bold text-sm text-purple-100 mb-1">Java</h3>
+                        <p class="text-[11px] text-purple-300/60">OOP Principles</p>
+                    </div>
+
+                    <div class="group p-5 rounded-3xl bg-[#130a27]/90 border border-purple-500/20 flex flex-col items-center text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <h3 class="font-bold text-sm text-purple-100 mb-1">UI/UX Design</h3>
+                        <p class="text-[11px] text-purple-300/60">Figma Wireframing</p>
+                    </div>
+
+                    <div class="group p-5 rounded-3xl bg-[#130a27]/90 border border-purple-500/20 flex flex-col items-center text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <h3 class="font-bold text-sm text-purple-100 mb-1">Tailwind CSS</h3>
+                        <p class="text-[11px] text-purple-300/60">Utility-First UI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section id="projects" class="section-padding relative">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <span class="text-xs font-bold tracking-widest text-fuchsia-400 uppercase bg-fuchsia-500/10 px-4 py-1.5 rounded-full border border-fuchsia-500/20">Portfolio</span>
+                    <h2 class="section-title font-extrabold mt-3 mb-4">Featured Projects</h2>
+                    <div class="w-16 h-1 bg-gradient-to-r from-purple-500 to-fuchsia-500 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- kapesintahan -->
+                    <div class="group rounded-3xl bg-[#130a27]/90 border border-purple-500/20 overflow-hidden flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="KapeSintahan" class="w-full h-full object-cover">
+                            <span class="absolute top-4 right-4 px-3 py-1 rounded-full bg-purple-950/80 border border-purple-500/30 text-purple-300 text-xs font-semibold">
+                                Featured Project
+                            </span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <div class="flex items-center space-x-2 text-xs font-semibold text-fuchsia-400 mb-3">
+                                    <i class="fa-solid fa-mug-hot"></i>
+                                    <span>Web App Project</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-2">KapeSintahan</h3>
+                                <p class="text-purple-200/70 text-sm leading-relaxed mb-6">
+                                    A cozy coffee-themed web application showcasing a warm brand concept and responsive layouts.
+                                </p>
+                            </div>
+                            <button onclick="openModal('KapeSintahan', 'KapeSintahan is a full coffee shop concept website designed with attention to aesthetic details, user interaction, and clean frontend structure.', 'https://github.com/nnicszn/KapeSintahan', 'https://nnicszn.github.io/KapeSintahan/')" class="w-full py-3 rounded-2xl bg-[#1e1039] text-purple-200 hover:text-white font-semibold text-xs transition-all">
+                                Explore Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- project card hehe future purposes -->
+                    <div class="rounded-3xl bg-[#130a27]/40 border border-purple-500/20 border-dashed p-6 flex flex-col justify-center items-center text-center">
+                        <div class="w-16 h-16 rounded-3xl bg-purple-500/10 text-fuchsia-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-purple-100 mb-2">More Projects In Progress</h3>
+                        <p class="text-purple-300/60 text-xs max-w-xs leading-relaxed mb-4">
+                            Currently sharpening Java algorithms, expanding UI prototypes, and building new web apps.
+                        </p>
+                        <span class="inline-flex items-center space-x-2 text-[11px] font-semibold text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-ping"></span>
+                            <span>In Development</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="py-8 px-4 border-t border-purple-500/10 bg-[#080311]/80 text-purple-300/60 text-xs text-center">
+        <p>&copy; 2026 Danica Rodriguez. rg, codm, valo, minecraft or dota ano tara??</p>
+    </footer>
+
+    <!-- project modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#080311]/80 backdrop-blur-xl hidden">
+        <div class="relative w-full max-w-lg bg-[#130a27] border border-purple-500/30 rounded-3xl shadow-2xl p-6">
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#1e1039] text-purple-300 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modal-title" class="text-xl font-bold text-white mb-2"></h3>
+            <p id="modal-desc" class="text-purple-200/80 text-xs sm:text-sm mb-6 leading-relaxed"></p>
+            <div class="flex space-x-3">
+                <a id="modal-github" href="#" target="_blank" class="flex-1 py-2.5 rounded-xl bg-[#1e1039] text-purple-200 text-center text-xs font-semibold">Source Code</a>
+                <a id="modal-live" href="#" target="_blank" class="flex-1 py-2.5 rounded-xl bg-purple-600 text-white text-center text-xs font-semibold">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- js baby -->
+    <script src="script.js"></script>
+</body>
+</html>

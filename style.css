@@ -1,0 +1,118 @@
+/*grayscale n color hover effect */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #080311;
+    color: #f3e8ff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*color hover effect pa rin xD*/
+.profile-img-hover {
+    filter: grayscale(100%) !important;
+    -webkit-filter: grayscale(100%) !important;
+    transition: all 0.5s ease-in-out !important;
+}
+
+.profile-img-hover:hover {
+    filter: grayscale(0%) !important;
+    -webkit-filter: grayscale(0%) !important;
+    transform: scale(1.02);
+}
+
+/* pc view (> 1024px) */
+.hero-title {
+    font-size: 64px;
+    line-height: 1.1;
+}
+.section-title {
+    font-size: 44px;
+}
+.container-custom {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* about sec */
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+/* tablet view (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .hero-title {
+        font-size: 48px !important;
+    }
+    .section-title {
+        font-size: 36px !important;
+    }
+    .container-custom {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .section-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .about-grid {
+        gap: 32px !important;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+/* mobile view (max 767px) */
+@media screen and (max-width: 767px) {
+    .hero-title {
+        font-size: 36px !important;
+    }
+    .section-title {
+        font-size: 28px !important;
+    }
+    .container-custom {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about-grid {
+        gap: 24px !important;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #080311;
+}
+::-webkit-scrollbar-thumb {
+    background: #5b21b6;
+    border-radius: 9999px;
+}
